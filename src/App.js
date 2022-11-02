@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Tweet from "./Tweet";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="tweetContainer">
+      <Tweet tweet="Stop Covid-19! Take-out only!" />
+      <Tweet tweet="At home, binge watching breaking Bad for second time" />
+      <Tweet tweet="When is the beach opening up? Can't wait.." />
     </div>
   );
 }
