@@ -13,14 +13,16 @@ class Tweet extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    let newComments = this.state.comments,
-      newComment = {
-        text: this.state.comment,
-        time: new Date(),
-      };
-    newComments.push(newComment);
-    this.setState({ comments: newComments });
-    this.setState({ comment: "" });
+    if (this.state.comment) {
+      let newComments = this.state.comments,
+        newComment = {
+          text: this.state.comment,
+          time: new Date(),
+        };
+      newComments.push(newComment);
+      this.setState({ comments: newComments });
+      this.setState({ comment: "" });
+    }
   };
 
   render() {
@@ -37,7 +39,9 @@ class Tweet extends React.Component {
             value={this.state.comment}
             onChange={this.handleChange}
           />
-          <button type="submit">Post</button>
+          <button type="submit" className="postButton">
+            Post
+          </button>
         </form>
         {this.state.comments.map((comment, i) => {
           return <Comment commentData={comment} key={i} />;

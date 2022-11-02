@@ -10,11 +10,11 @@ class Comment extends React.Component {
   render() {
     return (
       <div className="eachComment">
-        <Timer time={this.props.commentData.time} />
-        <div style={{ marginRight: "72px", fontWeight: "600" }}>
-          {this.props.commentData.text}
+        <p className="commentText">{this.props.commentData.text}</p>
+        <div className="timeAndLike">
+          <Timer time={this.props.commentData.time} />
+          <LikeButton />
         </div>
-        <LikeButton />
       </div>
     );
   }

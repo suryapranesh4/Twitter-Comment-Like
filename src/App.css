@@ -1,42 +1,100 @@
-.tweetContainer{
+.tweetContainer {
   min-height: 100vh;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-left: 1px solid rgb(239, 243, 244);
+  border-right: 1px solid rgb(239, 243, 244);
+  background-color: white;
 }
 
-.eachTweet{
-  margin: 48px 0;
-  width: 100%;
+.eachTweet {
+  padding: 20px 0;
+  width: 96%;
   display: flex;
   flex-flow: column;
-  align-items: center;
+  border-bottom: 2px solid rgb(239, 243, 244);
 }
 
-.inputTitle{
-  margin: 24px 0;
-  width: 100%;
+.inputTitle {
+  width: 96%;
   display: flex;
-  justify-content: center;
+  padding-left: 20px;
+  padding-bottom: 19px;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+input {
+  margin-right: 24px;
+  border-radius: 8px;
+  width: 75%;
+  height: 24px;
+  padding-left: 8px;
+  border: 2px solid rgb(239, 243, 244);
+}
+
+.commentText {
+  margin: 4px 0;
   font-weight: 600;
 }
 
-input{
-  margin-right: 24px;
-}
-
-.eachComment{
+.eachComment {
   display: flex;
   width: inherit;
-  justify-content: center;
-  margin-top : 24px;
+  padding-left: 20px;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
-.likeContainer{
+.likeContainer {
   display: flex;
+  align-items: center;
 }
 
-.countText{
-  margin-left : 16px;
+.countText {
+  margin-left: 4px;
+}
+
+.tweetHeader {
+  height: 20vh;
+  color: rgb(28, 155, 239);
+  border-bottom: 1px solid rgb(1, 37, 47);
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  width: 100%;
+  justify-content: center;
+}
+
+form {
+  padding: 12px 0 12px 20px;
+}
+
+.commentTime {
+  margin-right: 24px;
+  color: rgb(83, 100, 113);
+  white-space: nowrap;
+}
+
+.timeAndLike {
+  display: flex;
+  align-items: center;
+}
+
+.postButton {
+  background: rgb(28, 155, 239);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 24px;
+  padding: 3px 20px;
+  border: 1px solid rgb(239, 243, 244);
+  cursor: pointer;
+}
+
+.likeButton {
+  cursor: pointer;
+  color: rgb(28, 155, 239);
 }
