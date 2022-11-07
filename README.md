@@ -1,7 +1,12 @@
 ## Twitter-Comment-Like
 
+A React application to mock some hardcoded tweets.
+User will be able to comment on tweets and like the comment.
 
-  Git Clone : https://github.com/suryapranesh4/Twitter-Comment-Like.git <br />
+
+
+#### Instructions :
+  git clone https://github.com/suryapranesh4/Twitter-Comment-Like.git <br />
   cd Twitter-Comment-Like <br />
   npm install <br />
   npm start
