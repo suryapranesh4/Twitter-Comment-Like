@@ -1,6 +1,6 @@
 ## Twitter-Comment-Like
 
-A React application to mock some hardcoded tweets.
+A React application with some mocked hardcoded tweets.
 User will be able to comment on tweets and like the comment.
 
 
